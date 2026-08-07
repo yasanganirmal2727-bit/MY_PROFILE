@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasanga Nirmal — Web & Mobile App Developer</title>
+  <meta name="description" content="Yasanga Nirmal — BICT undergraduate, web & mobile app developer. AI-powered Android apps, web development, and software engineering.">
+  <meta name="keywords" content="Yasanga Nirmal, BICT, Android Developer, Kotlin, React, Mobile App Developer, Web Developer, Sri Lanka">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#top" class="brand"><img src="image/favicon.ico" alt="Yasanga Nirmal logo">YASANGA<strong>.</strong>NIRMAL</a>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <span class="live-badge" title="Actively online right now"><span class="live-dot"></span>Live now</span>
+      <a class="btn btn-primary" href="Yasanga_Nirmal_CV.docx" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download CV
+      </a>
+      <button class="navtoggle" aria-label="Open navigation" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <button class="btn-close" id="mobileNavClose" aria-label="Close navigation">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </button>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#skills" class="mobile-link">Skills</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#education" class="mobile-link">Education</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="auto" poster="hero-bg-poster.jpg">
+        <source src="video/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="hero-bg-overlay"></div>
+    </div>
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <div class="hero-badge"><span class="dot"></span> Available for internships</div>
+        <h1 class="name">Yasanga<br>Nirmal</h1>
+        <p class="role-line">Web Developer / Mobile App Developer</p>
+        <p class="lede">Motivated BICT undergraduate with hands-on experience building web and Android mobile applications. I integrate on-device AI/ML and generative APIs into production-style apps, and I enjoy turning real-world ideas into complete software solutions.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline></svg>
+            View Projects
+          </a>
+          <a class="btn btn-outline" href="Yasanga_Nirmal_CV.docx" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <div class="photo-frame tilt">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <img src="image/profile.jpg" alt="Portrait of Yasanga Nirmal">
+        </div>
+        <p class="photo-cap">YASANGA NIRMAL</p>
+      </div>
+      <div class="reveal delay-1">
+        <span class="eyebrow">About</span>
+        <h2 class="section-title">Building practical software, <span>end to end</span></h2>
+        <p style="margin-top:24px;">I am a Bachelor of Information & Communication Technology undergraduate with a strong focus on mobile and web development. I enjoy taking real-world ideas — especially in healthcare, productivity, and AI — and building them out fully: from interface and logic to the AI or API layer that makes them useful.</p>
+        <p style="margin-top:18px;">My recent work combines Google ML Kit's face and landmark detection with the Google Gemini API to create an AI-powered Android health analysis app. I am comfortable across the stack, from UI/UX and Material Design to backend logic and RESTful API integration.</p>
+      </div>
+      <ul class="fact-list reveal delay-2">
+        <li><span>Degree</span><span>BICT, 2022/2023</span></li>
+        <li><span>Focus</span><span>Web & Android Development</span></li>
+        <li><span>AI / ML</span><span>ML Kit, Gemini API</span></li>
+        <li><span>Location</span><span>Sri Lanka</span></li>
+        <li><span>Languages</span><span>Sinhala, English</span></li>
+        <li><span>GitHub</span><span><a href="https://github.com/yasanganirmal2727-bit" target="_blank" rel="noopener">yasanganirmal2727-bit</a></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Technical Skills</span>
+        <h2 class="section-title">Tools & technologies I <span>work with</span></h2>
+        <p class="section-subtitle">A practical toolkit shaped by academic projects and personal builds, with emphasis on mobile AI integration, responsive web development, and clean UI/UX.</p>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-card reveal delay-1">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>Mobile Development</h3>
+          <ul class="skill-list">
+            <li><div class="skill-item"><span>Android (Kotlin)</span><span>90%</span></div><div class="skill-bar"><i style="width:90%"></i></div></li>
+            <li><div class="skill-item"><span>MVVM Architecture</span><span>85%</span></div><div class="skill-bar"><i style="width:85%"></i></div></li>
+            <li><div class="skill-item"><span>Material Design 3</span><span>85%</span></div><div class="skill-bar"><i style="width:85%"></i></div></li>
+            <li><div class="skill-item"><span>Kotlin Coroutines</span><span>80%</span></div><div class="skill-bar"><i style="width:80%"></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>Web Development</h3>
+          <ul class="skill-list">
+            <li><div class="skill-item"><span>HTML5 & CSS3</span><span>90%</span></div><div class="skill-bar"><i style="width:90%"></i></div></li>
+            <li><div class="skill-item"><span>JavaScript</span><span>85%</span></div><div class="skill-bar"><i style="width:85%"></i></div></li>
+            <li><div class="skill-item"><span>React</span><span>80%</span></div><div class="skill-bar"><i style="width:80%"></i></div></li>
+            <li><div class="skill-item"><span>Responsive Design</span><span>90%</span></div><div class="skill-bar"><i style="width:90%"></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.1 10a10.05 10.05 0 0 1 9.9-8v10z"></path><path d="M12 12v10a10 10 0 0 0 10-10H12z"></path></svg>AI & Machine Learning</h3>
+          <ul class="skill-list">
+            <li><div class="skill-item"><span>Google ML Kit</span><span>85%</span></div><div class="skill-bar"><i style="width:85%"></i></div></li>
+            <li><div class="skill-item"><span>Google Gemini API</span><span>85%</span></div><div class="skill-bar"><i style="width:85%"></i></div></li>
+            <li><div class="skill-item"><span>Face & Landmark Detection</span><span>80%</span></div><div class="skill-bar"><i style="width:80%"></i></div></li>
+            <li><div class="skill-item"><span>Prompt Engineering</span><span>80%</span></div><div class="skill-bar"><i style="width:80%"></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>Tools & Databases</h3>
+          <ul class="skill-list">
+            <li><div class="skill-item"><span>Git & GitHub</span><span>85%</span></div><div class="skill-bar"><i style="width:85%"></i></div></li>
+            <li><div class="skill-item"><span>Android Studio & VS Code</span><span>90%</span></div><div class="skill-bar"><i style="width:90%"></i></div></li>
+            <li><div class="skill-item"><span>RESTful APIs & Firebase</span><span>80%</span></div><div class="skill-bar"><i style="width:80%"></i></div></li>
+            <li><div class="skill-item"><span>Figma & Canva</span><span>75%</span></div><div class="skill-bar"><i style="width:75%"></i></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Featured Projects</span>
+        <h2 class="section-title">Selected <span>work</span></h2>
+        <p class="section-subtitle">Projects built alongside my BICT studies, combining mobile AI, responsive web design, and end-to-end product thinking.</p>
+      </div>
+
+      <div class="project-card tilt reveal delay-1" id="projectCardAiDoctor">
+        <div class="project-visual">
+          <img class="project-img" src="ai-doctor-app.webp" alt="AI Doctor & Face Symmetry Analyzer app screenshots showing heart rate and ECG readings">
+        </div>
+        
+        <div class="project-body">
+          <div class="type">Personal / Academic Project</div>
+          <h3>AI Doctor & Face Symmetry Analyzer</h3>
+          <div class="stack">
+            <span>Kotlin</span><span>Google ML Kit</span><span>Google Gemini API</span><span>MVVM</span><span>Material Design 3</span>
+          </div>
+          <ul>
+            <li>Built an AI-powered Android app that performs real-time facial symmetry analysis using Google ML Kit's face detection and landmark tracking.</li>
+            <li>Integrated the Google Gemini API (gemini-1.5-flash) to generate personalized, bilingual (English & Sinhala) health advisories based on analysis results.</li>
+            <li>Implemented PDF medical report generation, allowing users to export and share a clean, structured summary of their results.</li>
+            <li>Designed a modern, intuitive interface following Material Design 3 guidelines, applying the MVVM pattern for maintainable, testable code.</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn btn-primary" href="https://github.com/yasanganirmal2727-bit/AIDoctor_App" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.4-1.54 6.4-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              View on GitHub
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt reveal delay-2" id="projectCardSriLanka">
+        <div class="project-visual">
+          <video class="project-img" src="video/sri-lankan-website.mp4" poster="sri-lankan-website.png" controls playsinline preload="metadata">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="project-body">
+          <div class="type">Personal Project</div>
+          <h3>Sri Lankan Web Site</h3>
+          <div class="stack">
+            <span>React</span><span>HTML5</span><span>CSS3</span><span>Responsive Web Design</span>
+          </div>
+          <ul>
+            <li>Built a responsive React website with a component-based structure and a mobile-first layout.</li>
+            <li>Developed reusable UI components and a clean, maintainable page structure.</li>
+            <li>Focused on fast load times and consistent styling across devices.</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn btn-primary" href="https://github.com/yasanganirmal2727-bit" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.4-1.54 6.4-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              View on GitHub
+            </a>
+             <a class="btn btn-outline" href="https://lnkd.in/gs3Kq98R" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Education</span>
+        <h2 class="section-title">Academic <span>Background</span></h2>
+      </div>
+      <div class="edu-list reveal delay-1">
+        <div class="edu-item">
+          <time>2022 / 2023 — Present</time>
+          <div class="edu-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg></div>
+          <div>
+            <h3>Bachelor of Information & Communication Technology (BICT)</h3>
+            <p>University undergraduate, focused on software engineering, mobile application development, web technologies, artificial intelligence, and machine learning.</p>
+            <div class="edu-tags"><span>Software Engineering</span><span>Mobile Dev</span><span>AI & ML</span></div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <time>2019 — 2022</time>
+          <div class="edu-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+          <div>
+            <h3>GCE Advanced Level (A/L) — Physical Science Stream</h3>
+            <p>Completed A/Ls in the Physical Science stream with a strong foundation in mathematics, physics, and information technology. Gained analytical problem-solving skills that support software engineering.</p>
+            <div class="edu-tags"><span>Mathematics</span><span>Physics</span><span>ICT</span></div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <time>2013 — 2019</time>
+          <div class="edu-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 21v-6h6v6"></path><path d="M9 11h.01M15 11h.01M9 15h.01M15 15h.01"></path></svg></div>
+          <div>
+            <h3>GCE Ordinary Level (O/L)</h3>
+            <p>Completed secondary education with a broad academic base including English, mathematics, science, and information technology.</p>
+            <div class="edu-tags"><span>English</span><span>Mathematics</span><span>Science</span><span>ICT</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:72px;">
+        <span class="eyebrow">Relevant Coursework</span>
+        <h2 class="section-title">What I have <span>studied</span></h2>
+      </div>
+      <div class="info-grid reveal delay-1">
+        <div class="info-card">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>University Modules</h3>
+          <ul>
+            <li>Software Engineering</li>
+            <li>Mobile Application Development</li>
+            <li>Web Technologies</li>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Database Management Systems</li>
+            <li>Object-Oriented Programming</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>Certifications & Courses</h3>
+          <ul>
+            <li>Android Development with Kotlin — self-study projects</li>
+            <li>Google ML Kit integration practice</li>
+            <li>Generative AI with Google Gemini API</li>
+            <li>React and responsive web development</li>
+            <li>Git & GitHub version control</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>Achievements & Activities</h3>
+          <ul>
+            <li>Developed and published an AI-powered Android app</li>
+            <li>Built a responsive React website as a personal project</li>
+            <li>Active learner and contributor on GitHub</li>
+            <li>Participated in technology workshops and online coding communities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Let’s work <span>together</span></h2>
+          <p>I am open to software development internship opportunities, web/mobile projects, and technical collaborations.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+              <span>Email: <a href="mailto:yasanganirmal2727@gmail.com">yasanganirmal2727@gmail.com</a></span>
+            </div>
+            <div class="contact-method">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+              <span>Location: Sri Lanka</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:yasanganirmal2727@gmail.com" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Send an Email
+          </a>
+          <a href="https://github.com/yasanganirmal2727-bit" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand"><img src="image/favicon-192.png" alt="Yasanga Nirmal logo">YASANGA<strong>.</strong>NIRMAL</a>
+        <p>BICT Undergraduate & Software Developer focused on responsive web and mobile application solutions.</p>
+        <div class="footer-badge"><span class="dot"></span> Open to Roles</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/yasanganirmal2727-bit" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:yasanganirmal2727@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Yasanga Nirmal. All rights reserved.</p>
+      <a href="#top" class="to-top">
+        Back to top
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
