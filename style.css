@@ -154,8 +154,25 @@
   }
   .hero-grid{display:flex; justify-content:space-between; align-items:center; gap:48px;}
   .hero-grid > div.hero-text{max-width:600px; text-align:left;}
-  .hero-photo-wrap{flex-shrink:0;}
-  .hero-photo-wrap .photo-frame{max-width:300px; margin:0;}
+  .hero-photo-wrap{flex-shrink:0; position:relative;}
+  .hero-photo-wrap::before{
+    content:""; position:absolute; inset:-34px; z-index:-1; border-radius:50%;
+    background:radial-gradient(circle, rgba(245,181,61,0.24) 0%, rgba(73,196,179,0.14) 45%, transparent 72%);
+    filter:blur(30px);
+    animation:float-photo 5s ease-in-out infinite;
+  }
+  .hero-photo{
+    max-width:320px; width:100%; max-height:420px; aspect-ratio:3/4; object-fit:cover;
+    display:block; border-radius:14px;
+    filter:
+      drop-shadow(0 30px 40px rgba(0,0,0,0.55))
+      drop-shadow(0 8px 18px rgba(0,0,0,0.4));
+    animation:float-photo 5s ease-in-out infinite;
+  }
+  @keyframes float-photo{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-14px);}
+  }
   .hero-badge{
     display:inline-flex; align-items:center; gap:8px;
     font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;
@@ -262,6 +279,48 @@
   .skill-bar i{display:block; height:100%; background:linear-gradient(90deg, var(--teal), var(--amber)); border-radius:2px;}
 
   /* Projects */
+
+
+
+
+/* -- CSS Code - ඔයාගේ style.css එකට add කරගන්න -- */
+
+/* Video-background container එක position relative කරන්න */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Video එක element එකෙන් එලියට නොයන්න */
+}
+
+/* Background image එක position absolute කරලා මුළු background එක පුරාම පෙනෙන්න හදන්න */
+.video-bg-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1; /* Video එකට යටින් තියෙන්න ඕනේ */
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover; /* Image එක size එකට හරියන්න stretch නොවී crop වෙන්න */
+}
+
+/* Video එක background image එකට උඩින් පේන්න හදන්න */
+.video-background video {
+  position: relative; /* z-index වැඩ කරන්න */
+  z-index: 2; /* Background image එකට උඩින් */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Video එක size එකට හරියන්න */
+  display: block; /* Gap එකක් නැතුව පේන්න */
+}
+
+
+
+
   .project-card{
     border:1px solid var(--line); border-radius:6px; background:var(--ink-2);
     display:grid; grid-template-columns:0.95fr 1.05fr; overflow:hidden;
@@ -284,6 +343,37 @@
   }
   .project-card:hover .project-img{transform:scale(1.02);}
   video.project-img{background:var(--ink); outline:none;}
+
+  /* Video gallery (project videos with a styled cover + switcher, so a video
+     never shows a plain black box before it is played) */
+  .video-gallery{flex-direction:column; gap:16px;}
+  .video-stage{position:relative; width:100%; display:flex; justify-content:center;}
+  .video-thumb{position:relative; width:100%; max-width:420px;}
+  .video-thumb[hidden]{display:none;}
+  .video-cover{
+    position:absolute; inset:0; border-radius:10px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    background:
+      radial-gradient(circle at 28% 22%, rgba(73,196,179,0.35) 0%, transparent 55%),
+      radial-gradient(circle at 80% 78%, rgba(245,181,61,0.32) 0%, transparent 55%),
+      linear-gradient(160deg, var(--ink-3) 0%, var(--ink) 100%);
+    transition:opacity 0.25s ease;
+  }
+  .video-cover.hidden{opacity:0; pointer-events:none;}
+  .video-play-btn{
+    width:62px; height:62px; border-radius:50%; border:1px solid var(--amber);
+    background:var(--amber); color:var(--ink); font-size:18px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; padding-left:4px;
+    box-shadow:0 12px 30px -8px rgba(0,0,0,0.65); transition:transform 0.2s ease;
+  }
+  .video-play-btn:hover{transform:scale(1.08);}
+  .video-switch{display:flex; gap:10px; justify-content:center;}
+  .video-switch-btn{
+    font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--paper-dim); background:transparent; border:1px solid var(--line); border-radius:var(--radius);
+    padding:6px 14px; cursor:pointer; transition:color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  }
+  .video-switch-btn.active, .video-switch-btn:hover{color:var(--ink); background:var(--amber); border-color:var(--amber);}
   .project-body{padding:40px 44px;}
   .project-body h3{font-family:var(--display); font-size:26px; margin:0 0 10px; letter-spacing:-0.01em;}
   .project-body .type{font-family:var(--mono); font-size:11px; color:var(--teal); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:14px;}
@@ -382,6 +472,12 @@
   }
   .contact-actions{padding:56px; background:var(--ink-3); border-left:1px solid var(--line); display:flex; flex-direction:column; gap:16px;}
   .contact-actions .btn{justify-content:center;}
+  .contact-gh-mark{
+    flex:1; display:flex; align-items:center; justify-content:center;
+    color:var(--line); opacity:0.55; transition:opacity 0.25s ease, color 0.25s ease;
+  }
+  .contact-gh-mark svg{width:110px; height:110px;}
+  .contact-gh-mark:hover{opacity:0.95; color:var(--amber);}
 
 
 
@@ -434,7 +530,8 @@
   @media (max-width:980px){
     .hero-grid{flex-direction:column-reverse; text-align:center;}
     .hero-grid > div.hero-text{padding:0 8px; max-width:100%; text-align:center;}
-    .hero-photo-wrap .photo-frame{max-width:220px; margin:0 auto;}
+    .hero-photo-wrap{margin:0 auto;}
+    .hero-photo{max-width:220px; margin:0 auto;}
     .about-grid{grid-template-columns:1fr; gap:40px;}
     .photo-frame{max-width:260px; margin:0 auto;}
     .project-card{grid-template-columns:1fr;}
